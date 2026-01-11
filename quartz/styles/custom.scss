@@ -1,3 +1,66 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// Google Sans font declarations
+@font-face {
+  font-family: "Google Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/static/fonts/Google_Sans/static/GoogleSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Google Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/static/fonts/Google_Sans/static/GoogleSans-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Google Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/static/fonts/Google_Sans/static/GoogleSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Google Sans";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/static/fonts/Google_Sans/static/GoogleSans-MediumItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Google Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/static/fonts/Google_Sans/static/GoogleSans-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Google Sans";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/static/fonts/Google_Sans/static/GoogleSans-SemiBoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Google Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/static/fonts/Google_Sans/static/GoogleSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Google Sans";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/static/fonts/Google_Sans/static/GoogleSans-BoldItalic.ttf") format("truetype");
+}
