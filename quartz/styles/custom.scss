@@ -64,3 +64,19 @@
   font-display: swap;
   src: url("/static/fonts/Google_Sans/static/GoogleSans-BoldItalic.ttf") format("truetype");
 }
+
+// Link hover highlight
+a:not(.internal) {
+  transition: background-color 0.2s ease, color 0.2s ease;
+  
+  &:hover {
+    background-color: rgba(212, 165, 116, 0.25);
+    padding: 0 0.15rem;
+    border-radius: 5px;
+    margin: 0 -0.15rem;
+  }
+}
+
+a.internal:hover {
+  background-color: rgba(212, 165, 116, 0.3);
+}
