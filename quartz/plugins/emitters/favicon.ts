@@ -9,7 +9,22 @@ export const Favicon: QuartzEmitterPlugin = () => ({
   async *emit({ argv }) {
     const iconPath = joinSegments(QUARTZ, "static", "icon.png")
 
-    const faviconContent = sharp(iconPath).resize(48, 48).toFormat("png")
+    // Trim excess padding, then resize to 64x64 with minimal padding
+    const faviconContent = await sharp(iconPath)
+      .trim({ threshold: 5 }) // Remove transparent/white edges
+      .resize(64, 64, {
+        fit: 'contain',
+        background: { r: 0, g: 0, b: 0, alpha: 0 }
+      })
+      .extend({
+        top: 4,
+        bottom: 4,
+        left: 4,
+        right: 4,
+        background: { r: 0, g: 0, b: 0, alpha: 0 }
+      })
+      .resize(64, 64)
+      .toFormat("png")
 
     yield write({
       ctx: { argv } as BuildCtx,
