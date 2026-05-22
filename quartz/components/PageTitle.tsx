@@ -8,7 +8,7 @@ const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompo
   const baseDir = pathToRoot(fileData.slug!)
   return (
     <h2 class={classNames(displayClass, "page-title")}>
-      <img src="/static/logo.png" alt="logo" class="page-title-logo" />
+      <img src="/static/beaver-logo.svg" alt="Beaver logo" class="page-title-logo" />
       <a href={baseDir}>{title}</a>
     </h2>
   )
@@ -21,13 +21,15 @@ PageTitle.css = `
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 0.75rem;
+  gap: 0.7rem;
   font-family: var(--titleFont);
+  font-weight: 400;
+  letter-spacing: 0;
 }
 
 .page-title .page-title-logo {
-  width: 56px;
-  height: 56px;
+  width: 42px;
+  height: 42px;
   flex-shrink: 0;
   object-fit: contain;
 }
@@ -40,13 +42,13 @@ PageTitle.css = `
 
 @media all and (max-width: 800px) {
   .page-title {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     gap: 0.5rem;
   }
   
   .page-title .page-title-logo {
-    width: 44px;
-    height: 44px;
+    width: 36px;
+    height: 36px;
   }
 }
 `

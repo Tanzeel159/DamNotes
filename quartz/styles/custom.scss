@@ -1,74 +1,67 @@
 @use "./base.scss";
 
-// Google Sans font declarations
-@font-face {
-  font-family: "Google Sans";
-  font-style: normal;
+body {
+  font-size: 0.86rem;
+  font-kerning: normal;
+  font-feature-settings:
+    "liga" 0,
+    "calt" 0;
+  letter-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+thead,
+.page-title {
   font-weight: 400;
-  font-display: swap;
-  src: url("/static/fonts/Google_Sans/static/GoogleSans-Regular.ttf") format("truetype");
+  letter-spacing: 0;
 }
 
-@font-face {
-  font-family: "Google Sans";
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url("/static/fonts/Google_Sans/static/GoogleSans-Italic.ttf") format("truetype");
+.page article > h1 {
+  font-size: 1.8rem;
 }
 
-@font-face {
-  font-family: "Google Sans";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("/static/fonts/Google_Sans/static/GoogleSans-Medium.ttf") format("truetype");
+h1 {
+  font-size: 1.58rem;
 }
 
-@font-face {
-  font-family: "Google Sans";
-  font-style: italic;
-  font-weight: 500;
-  font-display: swap;
-  src: url("/static/fonts/Google_Sans/static/GoogleSans-MediumItalic.ttf") format("truetype");
+h2 {
+  font-size: 1.26rem;
 }
 
-@font-face {
-  font-family: "Google Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("/static/fonts/Google_Sans/static/GoogleSans-SemiBold.ttf") format("truetype");
+h3 {
+  font-size: 1.01rem;
 }
 
-@font-face {
-  font-family: "Google Sans";
-  font-style: italic;
-  font-weight: 600;
-  font-display: swap;
-  src: url("/static/fonts/Google_Sans/static/GoogleSans-SemiBoldItalic.ttf") format("truetype");
+h4,
+h5,
+h6 {
+  font-size: 0.9rem;
 }
 
-@font-face {
-  font-family: "Google Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("/static/fonts/Google_Sans/static/GoogleSans-Bold.ttf") format("truetype");
+code,
+pre,
+figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+  font-family: var(--codeFont);
+  letter-spacing: 0;
 }
 
-@font-face {
-  font-family: "Google Sans";
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-  src: url("/static/fonts/Google_Sans/static/GoogleSans-BoldItalic.ttf") format("truetype");
+tbody,
+li,
+p {
+  line-height: 1.44rem;
 }
 
 // Link hover highlight
 a:not(.internal) {
-  transition: background-color 0.2s ease, color 0.2s ease;
-  
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+
   &:hover {
     background-color: rgba(212, 165, 116, 0.25);
     padding: 0 0.15rem;

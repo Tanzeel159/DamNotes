@@ -19,14 +19,31 @@ const config: QuartzConfig = {
     baseUrl: "quartz.jzhao.xyz",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
-      theme: {
-        fontOrigin: "local",
-        cdnCaching: true,
-        typography: {
-          header: "Google Sans",
-          body: "Google Sans",
-          code: "IBM Plex Mono",
+    theme: {
+      fontOrigin: "googleFonts",
+      cdnCaching: true,
+      typography: {
+        title: {
+          name: "Departure Mono",
+          weights: [400, 700],
+          includeItalic: false,
         },
+        header: {
+          name: "Departure Mono",
+          weights: [400, 700],
+          includeItalic: false,
+        },
+        body: {
+          name: "Roboto Mono",
+          weights: [400, 600],
+          includeItalic: true,
+        },
+        code: {
+          name: "Ubuntu Mono",
+          weights: [400, 600],
+          includeItalic: false,
+        },
+      },
       colors: {
         lightMode: {
           light: "#FFF8E7",
