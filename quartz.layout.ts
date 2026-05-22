@@ -21,7 +21,12 @@ export const defaultContentPageLayout: PageLayout = {
       component: Component.Breadcrumbs(),
       condition: (page) => page.fileData.slug !== "index",
     }),
-    Component.ArticleTitle(),
+    Component.Flex({
+      components: [
+        { Component: Component.ArticleTitle(), grow: true, align: "start" },
+        { Component: Component.CopyPageMarkdown(), align: "start" },
+      ],
+    }),
     Component.ContentMeta(),
     Component.TagList(),
   ],
@@ -41,10 +46,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer(),
     Component.DesktopOnly(Component.TableOfContents()),
   ],
-  right: [
-    Component.Graph(),
-    Component.Backlinks(),
-  ],
+  right: [Component.Graph(), Component.Backlinks()],
 }
 
 // components for pages that display lists of pages  (e.g. tags or folders)

@@ -1,0 +1,109 @@
+.copy-page-container {
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  margin-top: 2rem;
+}
+
+.copy-page-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.85rem;
+  font-family: var(--codeFont);
+  color: var(--darkgray);
+  background-color: var(--highlight);
+  border: 1px solid var(--lightgray);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+
+  &:hover {
+    border-color: var(--secondary);
+  }
+
+  svg {
+    fill: currentColor;
+  }
+
+  .dropdown-arrow {
+    margin-left: 0.2rem;
+    opacity: 0.6;
+  }
+}
+
+.copy-page-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  width: max-content;
+  min-width: 16rem;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4px);
+  transition: all 0.15s ease;
+  overflow: hidden;
+  padding: 0;
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+.copy-page-dropdown > a.dropdown-item,
+.copy-page-dropdown > a.dropdown-item.internal,
+.copy-page-dropdown > a.dropdown-item.external,
+.copy-page-dropdown > button.dropdown-item {
+  display: flex !important;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0.55rem 1rem !important;
+  color: var(--dark) !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  cursor: pointer;
+  font-weight: normal !important;
+  line-height: 1.4 !important;
+  text-align: left;
+  text-decoration: none !important;
+
+  &:hover {
+    color: var(--dark) !important;
+    background-color: var(--highlight) !important;
+  }
+
+  svg,
+  .ai-mark {
+    width: 16px;
+    height: 16px;
+    flex: 0 0 16px;
+    fill: var(--darkgray);
+    color: var(--darkgray);
+    line-height: 16px;
+    text-align: center;
+  }
+}
+
+.dropdown-item-title {
+  color: var(--dark);
+  font-family: var(--codeFont);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.external-arrow {
+  opacity: 0.7;
+  font-size: 0.75rem;
+}
