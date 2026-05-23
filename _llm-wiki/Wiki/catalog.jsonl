@@ -1,4 +1,0 @@
-{"path": "Wiki/Concepts/source-to-wiki-separation.md", "sources": ["Raw/Sources/llm-wiki-starter-demo-source.md"], "tag": "concept", "title": "Source To Wiki Separation", "topics": ["llm wiki"], "updated": "2026-05-23"}
-{"path": "Wiki/Logs/2026-05-23-first-ingest.md", "sources": ["Raw/Sources/llm-wiki-starter-demo-source.md"], "tag": "log", "title": "First Ingest", "topics": ["llm wiki"], "updated": "2026-05-23"}
-{"path": "Wiki/Projects/core-llm-wiki.md", "sources": ["Raw/Sources/llm-wiki-starter-demo-source.md"], "tag": "project", "title": "Core LLM Wiki", "topics": ["llm wiki"], "updated": "2026-05-23"}
-{"path": "Wiki/Topics/llm-wiki-workflow.md", "sources": ["Raw/Sources/llm-wiki-starter-demo-source.md"], "tag": "topic", "title": "LLM Wiki Workflow", "topics": ["llm wiki"], "updated": "2026-05-23"}
