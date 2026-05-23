@@ -4,8 +4,14 @@ node_modules
 public
 prof
 tsconfig.tsbuildinfo
-.obsidian
+**/.obsidian/workspace*.json
+**/.obsidian/plugins/
+**/.obsidian/cache/
+**/.obsidian/logs/
 .quartz-cache
 private/
 .replit
 replit.nix
+Raw/Files/*
+!Raw/Files/.gitkeep
+Drafts/
