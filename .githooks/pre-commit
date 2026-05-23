@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 set -eu
 
-python3 scripts/wiki_tool.py build
-python3 scripts/wiki_tool.py lint
-python3 scripts/wiki_tool.py source-lint
+python3 _llm-wiki/scripts/wiki_tool.py build
+python3 _llm-wiki/scripts/wiki_tool.py lint
+python3 _llm-wiki/scripts/wiki_tool.py source-lint

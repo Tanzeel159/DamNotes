@@ -15,7 +15,7 @@ aliases:
 
 # Source To Wiki Separation
 
-Source-to-Wiki separation means captured material stays in `Raw/Sources/`, while distilled knowledge lives in `Wiki/`.
+Source-to-Wiki separation means captured material stays in `_llm-wiki/Raw/Sources/`, while distilled knowledge lives in `_llm-wiki/Wiki/`.
 
 This separation helps future agents avoid treating raw context as already-verified reusable knowledge. It also makes the transformation from source material into focused notes visible.
 

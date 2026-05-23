@@ -12,6 +12,8 @@ tsconfig.tsbuildinfo
 private/
 .replit
 replit.nix
-Raw/Files/*
-!Raw/Files/.gitkeep
+_llm-wiki/Raw/Files/*
+!_llm-wiki/Raw/Files/.gitkeep
 Drafts/
+_llm-ignore/*
+!_llm-ignore/.gitkeep

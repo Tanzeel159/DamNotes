@@ -17,7 +17,17 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "tanzeel159.github.io/Damlog",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    ignorePatterns: [
+      "private",
+      "templates",
+      ".obsidian",
+      "Drafts",
+      "_llm-ignore",
+      "_llm-wiki",
+      "Raw",
+      "Schema",
+      ".agents",
+    ],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",

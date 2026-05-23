@@ -21,7 +21,7 @@ Required fields:
 - `status`: `seed`, `draft`, or `evergreen`.
 - `created`: creation date as `YYYY-MM-DD`.
 - `updated`: last update date as `YYYY-MM-DD`.
-- `sources`: list of paths under `Raw/Sources/`.
+- `sources`: list of paths under `_llm-wiki/Raw/Sources/`, stored relative to the LLM Wiki root as `Raw/Sources/...`.
 - `source_count`: number of source paths.
 - `aliases`: alternate names.
 

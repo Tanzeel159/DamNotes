@@ -7,8 +7,8 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-SKIP_DIRS = {".git", "node_modules", "public", ".quartz-cache"}
+ROOT = Path(__file__).resolve().parents[2]
+SKIP_DIRS = {".git", "node_modules", "public", ".quartz-cache", "private", "Drafts", "_llm-ignore"}
 SECRET_PATTERNS = [
     re.compile(r"-----BEGIN (?:RSA |OPENSSH |EC |DSA )?PRIVATE KEY-----"),
     re.compile(r"(?i)\b(api[_-]?key|secret|token|password)\s*[:=]\s*['\"]?[A-Za-z0-9_./+=-]{16,}"),
