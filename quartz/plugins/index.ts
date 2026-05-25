@@ -1,6 +1,8 @@
 import { StaticResources } from "../util/resources"
 import { BuildCtx } from "../util/ctx"
 
+export const CustomOgImagesEmitterName = "CustomOgImages"
+
 export function getStaticResourcesFromPlugins(ctx: BuildCtx) {
   const staticResources: StaticResources = {
     css: [],
