@@ -4,8 +4,6 @@ date-created: 2026-01-11
 date-modified: 2026-05-23
 ---
 
-# Home
-
 Welcome to my blog.
 
 This section is for posts, notes, research, and public writing.
@@ -27,21 +25,4 @@ Use this area to highlight active projects, demos, experiments, or community lin
 - Demos
 - Experiments
 - Community
-
-## For Agent Readers
-
-
-
-> [!NOTE] This blog can include machine-readable content for agents and LLMs.
-> - View as Markdown
-> - Copy all blog content
-> - Ask an assistant about this blog
-Keep this page as the human-readable entry point for the blog section.
-
-
-
-
-
-
-
 

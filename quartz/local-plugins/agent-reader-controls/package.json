@@ -1,0 +1,37 @@
+{
+  "name": "agent-reader-controls",
+  "version": "1.0.0",
+  "description": "Damlog controls for copying pages as Markdown and opening LLM-readable text.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./components": "./dist/components/index.js"
+  },
+  "peerDependencies": {
+    "preact": "^10.0.0"
+  },
+  "quartz": {
+    "name": "agent-reader-controls",
+    "displayName": "Agent Reader Controls",
+    "description": "Emits LLM-readable text files and renders copy/open-in-assistant controls.",
+    "category": [
+      "emitter",
+      "component"
+    ],
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "defaultOrder": 120,
+    "defaultEnabled": true,
+    "components": {
+      "CopyPageMarkdown": {
+        "name": "CopyPageMarkdown",
+        "displayName": "Copy Page Markdown",
+        "description": "Copy and open Markdown/LLM text for the current page.",
+        "version": "1.0.0",
+        "defaultPosition": "beforeBody",
+        "defaultPriority": 18
+      }
+    }
+  }
+}
