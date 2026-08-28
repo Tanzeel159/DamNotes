@@ -95,8 +95,11 @@ p {
   }
 }
 
-// Link hover highlight
-a:not(.internal) {
+// Link hover highlight (content links only — UI chrome like dropdowns
+// must not change padding/margin on hover or the layout will flicker)
+article p a:not(.internal),
+article li a:not(.internal),
+article td a:not(.internal) {
   transition:
     background-color 0.2s ease,
     color 0.2s ease;
@@ -109,6 +112,6 @@ a:not(.internal) {
   }
 }
 
-a.internal:hover {
+a.internal:not(.dropdown-item):hover {
   background-color: rgba(212, 165, 116, 0.3);
 }
